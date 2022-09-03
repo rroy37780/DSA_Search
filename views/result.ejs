@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>DSA'RCH | Results</title>
+  </head>
+  <body>
+    <a href="/"><img src="./logo.png" alt="" /></a>
+
+    <form action="/search" method="GET">
+      <input type="text" name="query" value="<%= value %>" required />
+      <br />
+      <button type="submit">Search</button>
+    </form>
+
+    <div class="results">
+      <div class="result">
+        <a href="<%= "/problem"+id[0] %>">
+          <h3><%= titles[0] %></h3>
+          <p><%= snippet[0] %> </p>
+        </a>
+      </div>
+      <div class="result">
+        <a href="<%= "/problem"+id[1] %>">
+          <h3><%= titles[1] %></h3>
+          <p><%= snippet[1] %> </p>
+        </a>
+      </div>
+      <div class="result">
+        <a href="<%= "/problem"+id[2] %>">
+          <h3><%= titles[2] %></h3>
+          <p><%= snippet[2] %> </p>
+        </a>
+      </div>
+      <div class="result">
+        <a href="<%= "/problem"+id[3] %>">
+          <h3><%= titles[3] %></h3>
+          <p><%= snippet[3] %> </p>
+        </a>
+      </div>
+      <div class="result">
+        <a href="<%= "/problem"+id[4] %>">
+          <h3><%= titles[4] %></h3>
+          <p><%= snippet[4] %> </p>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

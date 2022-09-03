@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #c7e3f1;
+        /* showing the button in centre */
+        width: 10%;
+        margin-left: 45%;
+      }
+
+      button:hover {
+        background-color: #5ce1e6;
+        color: rgb(255, 255, 255);
+      }
+
+      button a {
+        text-decoration: none;
+        color: #000;
+      }
+    </style>
+    <title><%= "Problem: "+ques_title %></title>
+  </head>
+  <body>
+    <h1 id="ques_title"><%= ques_title %></h1>
+
+    <button>
+      <a href="<%= link %>"> <%= "View Problem" %> </a>
+    </button>
+
+    <p id="content"><%= problem_text %></p>
+  </body>
+</html>

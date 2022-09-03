@@ -1,0 +1,17 @@
+{
+  "name": "searchengine",
+  "version": "1.0.0",
+  "description": "A program to search for DSA problems",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon"
+  },
+  "author": "Md Afridi",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "natural": "^5.2.2",
+    "stopword": "^2.0.2"
+  }
+}
